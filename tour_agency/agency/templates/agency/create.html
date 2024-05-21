@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<div class="container mt-3">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit" class="btn btn-success">Saqlash</button>
+        <a href="{% url 'index' %}" class="btn btn-secondary ml-2">Ortga</a>
+    </form>
+</div>
+
+{% endblock main %}

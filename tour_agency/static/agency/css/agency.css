@@ -1,0 +1,6 @@
+@media (prefers-color-scheme: dark) {
+  .element {
+    color: var(--mdb-primary-text-emphasis);
+    background-color: var(--mdb-primary-bg-subtle);
+  }
+}

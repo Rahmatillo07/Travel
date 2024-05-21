@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<form method="post">
+    {% csrf_token %}
+    <p>{{ phone.title }} Shu elonni rostdan ham o'chirmoqchimisz</p>
+    <a href=" {% url 'index' %} ">Ortga</a>
+    <button>Tasdiqlash</button>
+</form>
+
+{% endblock main %}
